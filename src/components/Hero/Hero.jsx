@@ -17,9 +17,9 @@ const Hero = () => {
           <p>Currated playlist</p>
           <div className="hero-text-header-cont">
             <h1 className="hero-text-header">R & B Hits</h1>
-            <p>All mine, Lie again, Petty call me everyday,</p>
-            <p>Out of time, No love, Bad habit,</p>
-            <p>and so much more</p>
+            <p className="here-header-dscptn-text">All mine, Lie again, Petty call me everyday,</p>
+            <p className="here-header-dscptn-text">Out of time, No love, Bad habit,</p>
+            <p className="here-header-dscptn-text">and so much more</p>
           </div>
           <div className="mobile-gap ">
             <div className="img-stack">
@@ -35,6 +35,7 @@ const Hero = () => {
               <p>33k Likes</p>
             </div>
           </div>
+          
         </div>
         <img src={avartar} alt="avartar " className="hero-avatar hide-on-mobile" />
       </div>

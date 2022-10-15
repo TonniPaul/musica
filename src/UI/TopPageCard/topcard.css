@@ -1,0 +1,68 @@
+.topcard-div {
+   display: grid;
+   grid-template-columns: auto 1fr auto;
+   gap: 20px;
+   color: #fff;
+   height: max-content;
+   background: var(--primary-bg-alt);
+   justify-content: space-between;;
+   border-radius: 20px;
+   padding: .5rem;
+   align-items: center;
+   font-size: 14px;
+}
+/* .musicart-cont {
+
+} */
+.music-art-img {
+ width: 80px;
+ height: 80px;
+}
+.music-details-cont {
+   display: grid;
+   align-items: flex-end;
+   gap: 10px;
+}
+.song-title {
+ font-size: 19px;
+}
+.artist-name {
+   color: var(--light);
+}
+
+.like-cont {
+   width: 37px;
+   height: 37px;
+   border: 1px solid var(--light);
+   border-radius: 50%;
+   display: grid;
+   place-items: center;
+}
+
+@media (max-width : 900px) {
+   .topcard-div {
+      width: 323px;
+      height: auto;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 30px;
+      position: relative;
+      padding: 1rem;
+   }
+   .music-details-cont {
+      width: inherit;
+   }
+   .musicart-cont {
+      width: 100%;
+      display: grid;
+      justify-content: flex-start;
+   }
+   .music-art-img {
+      width: 100%;
+   }
+   .like-cont {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+   }
+}

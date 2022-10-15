@@ -8,3 +8,12 @@
 #root {
   padding: 1rem 2rem;
 }
+.bbbbbbb {
+  filter: invert(70%) sepia(65%) saturate(332%) hue-rotate(0deg)
+  brightness(104%) contrast(96%);
+}
+
+/* ======SCROLL BAR STYLING ======== */
+::-webkit-scrollbar {
+  width: 5px !important;
+}

@@ -1,6 +1,6 @@
 .hero {
    width: 100%;
-   height: 373px;
+   height: 450px;
    padding: 1rem;
    margin-top: 2rem;
    border-radius: 40px;
@@ -8,7 +8,7 @@
    background-size: cover;
    background-position-y: -80px;
    display: grid;
-   grid-template-columns: 1.5fr 1fr;
+   grid-template-columns: 1fr;
    overflow: hidden;
    background-repeat: no-repeat;
    background-color: var(--hero-bg);
@@ -33,7 +33,7 @@
    position: relative;
 }
 .hero-text-header-cont {
-   margin: 4rem 0;
+   margin: 10rem 0 0;
 }
 /* ======= HERO TEXTS STYLING ====== */
 .hero-text-header {
@@ -95,5 +95,11 @@
       background-repeat: no-repeat;
       background-color: var(--hero-bg);
       background-position-x: 80%;
+      display: grid;
+      height: 370px;
+      grid-template-columns: 1.5fr 1fr;
+   }
+   .hero-text-header-cont {
+      margin: 4rem 0;
    }
 }

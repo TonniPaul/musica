@@ -1,0 +1,16 @@
+:root {
+  --primary-bg : #1d2123;
+  --primary-bg-alt :#1b1f1f;
+  --text-grey : #4f524f;
+  --hero-bg : #609eaf;
+  --light :#a5a5a5;
+  --yellow : #facd66;
+  --filter: drop-shadow(1px 1px 1px var(--light));
+}
+
+body {
+  background: var(--primary-bg);
+  color: var(--text-grey);
+  user-select: none;
+}
+

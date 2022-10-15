@@ -6,6 +6,7 @@
   --light :#a5a5a5;
   --yellow : #facd66;
   --filter: drop-shadow(1px 1px 1px var(--light));
+  --transition: all 1s ease-in-out;
 }
 
 body {

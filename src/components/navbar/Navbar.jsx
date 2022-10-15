@@ -31,7 +31,7 @@ const Navbar = ({children}) => {
                :
                <span className="material-symbols-outlined x hide-0n-desktop" onClick={handleClose} >close</span>
             }
-            <img src={logo} alt="logo" />
+            <img src={logo} alt="logo" className="logo" />
          </div>
 
          <div className="search-cont">

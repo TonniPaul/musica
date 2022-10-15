@@ -1,15 +1,92 @@
 .hero {
    width: 100%;
-   height: 500px;
+   height: 373px;
    padding: 1rem;
    margin-top: 2rem;
    border-radius: 40px;
    background: url(../../assets/herobg-mobile.svg);
    background-size: cover;
    background-position-y: -80px;
+   display: grid;
+   grid-template-columns: 1.5fr 1fr;
+   overflow: hidden;
    background-repeat: no-repeat;
    background-color: var(--hero-bg);
+   position: relative;
 }
+.hero-avatar {
+   position: absolute;
+   right: 10%;
+   transition: var(--transition);
+   transform: scale(1);
+}
+.hero-avatar:hover {
+   transform: scale(1.2);
+}
+.hero-content {
+   color: #fff;
+   height: 100%;
+   font-size: 14px;
+   font-weight: 400;
+   display: grid;
+   padding: 1rem 2rem 0;
+   position: relative;
+}
+.hero-text-header-cont {
+   margin: 4rem 0;
+}
+/* ======= HERO TEXTS STYLING ====== */
+.hero-text-header {
+   font-size: 35px;
+   line-height: 42px;
+   font-weight: 700;
+}
+
+
+/* ======RANDOM USER IMAGES STYLING ====== */
+
+.img-stack {
+   position: relative;
+   display: flex;
+   align-items: center;
+   width: max-content;
+}
+.randomuser {
+   position: absolute;
+   width: 30px;
+   height: 30px;
+   transition: var(--transition);
+   transform: scale(1);
+}
+.randomuser:hover {
+   transform:scale(1.3) ;
+   z-index: 100;
+}
+.rd1 {
+   left: 0px;
+   z-index: 1;
+}
+.rd2 {
+   left: 20px;
+   z-index:2 ;
+}
+.rd3 {
+   left: 40px;
+   z-index:3 ;
+}
+.rd {
+   left: 60px;
+   z-index: 4;
+}
+.rd4 {
+   left: 80px;
+   z-index:5 ;
+}
+.margin-left {
+   margin-left: 120px;
+}
+
+/* ===== MEDIA QUERY FOR DESKTOP ===== */
 
 @media (min-width: 900px) {
    .hero {
@@ -17,6 +94,6 @@
       background-size: contain;
       background-repeat: no-repeat;
       background-color: var(--hero-bg);
-      background-position-x: 50%;
+      background-position-x: 80%;
    }
 }

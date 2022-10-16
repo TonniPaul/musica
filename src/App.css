@@ -7,6 +7,8 @@
   --yellow : #facd66;
   --filter: drop-shadow(1px 1px 1px var(--light));
   --transition: all 1s ease-in-out;
+  --redfilter: grayscale(100%) brightness(100%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(0.8);
+  --yellowfilter : invert(70%) sepia(65%) saturate(332%) hue-rotate(0deg) brightness(104%) contrast(96%);
 }
 
 body {

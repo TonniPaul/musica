@@ -9,14 +9,18 @@ import { NavLink } from 'react-router-dom'
 
 
 const Navbar = ({children}) => {
-
-   const [ isOpen, setIsOpen ] =useState(false)
+   const [ isOpen, setIsOpen ] =useState(false);
+   const [ isSearching, setIsSearching ] = useState(false);
 
    const handleNav = () => {
       setIsOpen(true)
    }
    const handleClose = () => {
       if (isOpen) setIsOpen(false)
+   }
+   
+   const  handleSearching = () => {
+      setIsSearching(!isSearching)
    }
   return (
     <div className="" onClick={handleClose} >
@@ -35,8 +39,16 @@ const Navbar = ({children}) => {
          </div>
 
          <div className="search-cont">
-            <img src={searchicon} alt="search" className="search-icon" />
-            <input type="text" placeholder="Seach artists" className="input-search" />
+            <img src={searchicon} alt="search" className="search-icon" onClick={handleSearching} />
+            <input 
+               type="text" 
+               placeholder="Seach artists" 
+               className="hide-on-mobile input-search" 
+               style={{
+                  display : isSearching && 'inline',
+               }}
+               autoComplete
+            />
          </div>
       </div>
       <div className="flex-children">

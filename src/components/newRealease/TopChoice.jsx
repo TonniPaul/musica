@@ -6,7 +6,7 @@ const TopChoice = () => {
     <div className='margin'>
       <h2 className="head-top">Popular in your area</h2>
       <div className="scroll-flex">
-        {songs.map((items) => {
+        {songs.popular.map((items) => {
           return (
             <MusicCard 
               key={items.id}

@@ -7,7 +7,7 @@ const NewRealease = () => {
     <div className='margin'>
       <h2 className="head-top">New releases</h2>
       <div className="scroll-flex">
-        {songs.map((items) => {
+        {songs.new.map((items) => {
           return (
             <MusicCard 
               key={items.id}

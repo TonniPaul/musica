@@ -126,7 +126,7 @@
       background: var(--primary-bg-alt);
       width: max-content;
       justify-content: center;
-      padding:2rem 1rem ;
+      padding:2rem .5rem ;
       border-radius: 32px;
       filter: var(--filter);
    }

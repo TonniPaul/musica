@@ -17,8 +17,8 @@ const TopCard = ({images, title, artist, time}) => {
       </div>
       <div className="music-details-cont">
          <h3 className="song-title">{ title }</h3>
-         <small className="artist-name">{artist} </small>
-         <small className="hour-txt">{time} </small>
+         <small className="artist-name"> {artist} </small>
+         <small className="hour-txt"> {time} </small>
       </div>   
       <div className="like-cont"
          onClick={handleLike}

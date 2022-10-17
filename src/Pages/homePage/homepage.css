@@ -1,6 +1,6 @@
 .homepage-top-cont {
    display: grid;
-   grid-template-columns: 1.8fr 1fr;
+   grid-template-columns: auto auto;
    gap: 2rem;
 }
 

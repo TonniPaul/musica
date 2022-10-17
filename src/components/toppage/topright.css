@@ -16,6 +16,8 @@
       display: flex;
       flex-direction: column;
       gap: 10px;
+      height: auto;
+      margin: 0;
    }
    .mobile-flex {
       display: flex;

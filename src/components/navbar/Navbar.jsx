@@ -47,7 +47,6 @@ const Navbar = ({children}) => {
                style={{
                   display : isSearching && 'inline',
                }}
-               autoComplete
             />
          </div>
       </div>

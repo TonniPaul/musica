@@ -4,9 +4,11 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Quicksand', sans-serif;
+  scroll-behavior: smooth;
 }
 #root {
-  padding: 1rem 2rem;
+  padding: 0 32px;
+  margin: 0;
 }
 .liked-music {
   filter: var(--redfilter);

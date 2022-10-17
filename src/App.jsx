@@ -2,7 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import Hero from './components/Hero/Hero'
 import Navbar from './components/navbar/Navbar'
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, useNavigate } from 'react-router-dom'
 import Radio from './Pages/radio/Radio'
 import LogOut from './Pages/logout/LogOut'
 import Profile from './Pages/profile/Profile'
@@ -13,14 +13,17 @@ import HomePage from './Pages/homePage/HomePage'
 function App() {
   
   const [count, setCount] = useState(0)
+  const navigate = useNavigate()
+
+  const handleLoad = () => {
+    navigate("/home")
+  }
 
   return (
-    <div className="App">
+    <div className="App" onLoad={handleLoad}>
       <Navbar>
         <Routes>
-          <Route path='/' element= {<HomePage/>} />
-        </Routes>
-        <Routes>
+          <Route path='/' element= {<HomePage/>}  />
           <Route path='/home' element={<HomePage />} />
           <Route path='/playlist' element= { <Playlist /> } />
           <Route path='/radio' element={ <Radio />} />

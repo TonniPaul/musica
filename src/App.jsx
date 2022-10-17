@@ -13,14 +13,9 @@ import HomePage from './Pages/homePage/HomePage'
 function App() {
   
   const [count, setCount] = useState(0)
-  const navigate = useNavigate()
-
-  const handleLoad = () => {
-    navigate("/home")
-  }
 
   return (
-    <div className="App" onLoad={handleLoad}>
+    <div className="App" >
       <Navbar>
         <Routes>
           <Route path='/' element= {<HomePage/>}  />

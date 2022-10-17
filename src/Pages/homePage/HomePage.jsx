@@ -4,10 +4,16 @@ import "./homepage.css"
 import golden from "../../assets/golden.svg"
 import NewRealease from "../../components/newRealease/NewRealease";
 import TopChoice from "../../components/newRealease/TopChoice";
+import { useNavigate } from "react-router-dom";
 
 const HomePage = () => {
+  const navigate = useNavigate()
+
+  const handleLoad = () => {
+    navigate("/home")
+  }
   return (
-    <>
+    <div onLoad={handleLoad}>
       <div className="homepage-top-cont">
          <Hero />
          <TopRight />
@@ -16,7 +22,7 @@ const HomePage = () => {
         <NewRealease />
         <TopChoice />
       </div>
-    </>
+    </div>
   )
 }
 

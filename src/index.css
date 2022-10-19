@@ -14,9 +14,9 @@
   filter: var(--redfilter);
 }
 
-@media( min-width : 900px) {
+@media( max-width : 900px) {
   #root {
-    padding: 16px;
+    padding:0 16px;
   }
   .mobile-flex::-webkit-scrollbar {
     background: none ;

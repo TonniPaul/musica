@@ -1,0 +1,6 @@
+.rhap_container, .rhap_progress-section, .rhap_controls-section {
+   display: flex !important;
+   flex-direction: row;
+   width: 100%;
+   gap: 100px;
+}

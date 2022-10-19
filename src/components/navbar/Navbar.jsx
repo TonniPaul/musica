@@ -51,9 +51,9 @@ const Navbar = ({children}) => {
          </div>
       </div>
       {<NavMobile isOpen={isOpen}/>}
-      <div className="flex-children">
+      <div className="flex-children ">
          <div className="flex-column-cont nav-desktop hide-on-mobile">
-            <div className="flex-column">
+            <div className="flex-column top">
                <div className="mobile-gap">
                   <NavLink to='/home'>
                      <svg className='svg-icons' width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -101,7 +101,7 @@ const Navbar = ({children}) => {
                   </NavLink>
                </div>
             </div>
-            <div className="flex-column">
+            <div className="flex-column top bottom">
                <div className="mobile-gap">
                   <NavLink to='profile'>
                      <svg className='svg-icons' width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">

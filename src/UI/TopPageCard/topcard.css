@@ -11,9 +11,6 @@
    align-items: center;
    font-size: 14px;
 }
-/* .musicart-cont {
-
-} */
 .music-art-img {
  width: 80px;
  height: 80px;
@@ -24,10 +21,14 @@
    gap: 10px;
 }
 .song-title {
- font-size: 19px;
+ font-size: 16px;
+ line-height: 20px;
+ width: 100%;
 }
 .artist-name {
    color: var(--light);
+   font-size: 11px;
+   text-transform: capitalize;
 }
 
 .like-cont {

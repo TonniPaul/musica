@@ -1,6 +1,7 @@
 .homepage-top-cont {
    display: grid;
    grid-template-columns: auto auto;
+   padding-right: 1rem;
    gap: 2rem;
 }
 
@@ -8,5 +9,6 @@
    .homepage-top-cont {
       grid-template-columns: 1fr;
       margin-top: 4rem;
+      padding: 0;
    }
 }

@@ -18,4 +18,6 @@
 }
 .music-card-text-cont {
    color: var(--light);
+   display: grid;
+   gap: 0;
 }

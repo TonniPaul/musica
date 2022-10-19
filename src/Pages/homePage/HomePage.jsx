@@ -6,7 +6,7 @@ import NewRealease from "../../components/newRealease/NewRealease";
 import TopChoice from "../../components/newRealease/TopChoice";
 import { useNavigate } from "react-router-dom";
 
-const HomePage = () => {
+const HomePage = ({searched}) => {
   const navigate = useNavigate()
 
   const handleLoad = () => {
@@ -19,7 +19,9 @@ const HomePage = () => {
          <TopRight />
       </div>
       <div className="new-realease">
-        <NewRealease />
+        <NewRealease
+         searched={searched}
+         />
         <TopChoice />
       </div>
     </div>

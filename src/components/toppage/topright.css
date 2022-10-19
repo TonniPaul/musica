@@ -11,6 +11,9 @@
    font-size: 26px;
    line-height: 120%;
 }
+.mobile-flex {
+   overflow: hidden;
+}
 @media (max-width: 900px) {
    .tp-cont {
       display: flex;
@@ -28,4 +31,5 @@
       padding: 1rem 0;
       gap: 20px;
    }
+   
 }

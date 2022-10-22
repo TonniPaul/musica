@@ -5,6 +5,7 @@ import searchicon from '../../assets/searchicon.svg';
 import { useState } from "react";
 import NavMobile from "./NavMobile";
 import { NavLink } from 'react-router-dom'
+import { useSearch } from "../../Context/SeachContext";
 
 
 
@@ -22,6 +23,7 @@ const Navbar = ({children}) => {
    const  handleSearching = () => {
       setIsSearching(!isSearching)
    }
+   const { setSearch } = useSearch('')
   return (
     <div className="" onClick={handleClose} >
       <div className="nav flex"
@@ -47,6 +49,7 @@ const Navbar = ({children}) => {
                style={{
                   display : isSearching && 'inline',
                }}
+               onInput = { (e) => setSearch(e.target.value) }
             />
          </div>
       </div>

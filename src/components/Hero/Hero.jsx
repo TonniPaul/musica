@@ -50,8 +50,8 @@ const Hero = () => {
               y : 300,
             }}
           transition = {{
-              type : 'spring',
-              stiffness: 50
+              type : 'tween',
+              duration : 1
             }}
           onLoad ={() => setload(!load)}
         >

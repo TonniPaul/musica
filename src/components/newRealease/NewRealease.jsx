@@ -2,9 +2,10 @@ import MusicCard from '../../UI/musicCards/MusicCard';
 import "./newRelease.css"
 import { songs } from '../../objectFiles/songData';
 import { useEffect, useState } from 'react';
+import { useSearch } from '../../Context/SeachContext';
 
 const NewRealease = () => {
-  const [ search, setSearch ] =useState('wizkid')
+  const { search } = useSearch('wizkid')
   const [ music, setMusic ] = useState([])
 
   useEffect(() => {

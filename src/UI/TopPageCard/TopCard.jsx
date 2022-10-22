@@ -1,6 +1,6 @@
 import "./topcard.css"
-import emptylove from '../../assets/emptylove.svg'
-import { useState } from "react"
+import { useState } from "react";
+import { motion } from "framer-motion";
 
 
 const TopCard = ({images, title, artist, time}) => {
@@ -11,7 +11,19 @@ const TopCard = ({images, title, artist, time}) => {
       setClicked(!clicked)
 }
   return (
-    <div className="topcard-div">
+    <motion.div 
+      className="topcard-div"
+      whileHover = {{
+         background : `url(./assets/herobg.svg)`,
+         backgroundColor: `rgb(233, 202, 129)`,
+         backgroundSize : 50
+      }}
+      drag
+      transition = {{
+         type : 'tween',
+         duration: 1
+      }}
+    >
       <div className="musicart-cont">
          <img src={images} alt="" className="music-art-img" />
       </div>
@@ -28,7 +40,7 @@ const TopCard = ({images, title, artist, time}) => {
          </svg>
 
       </div>
-    </div>
+    </motion.div>
   )
 }
 

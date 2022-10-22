@@ -5,7 +5,7 @@
    color: #fff;
    height: max-content;
    background: var(--primary-bg-alt);
-   margin-bottom: 14px;
+   margin: 14px 0;
    justify-content: space-between;;
    border-radius: 20px;
    padding: .5rem;

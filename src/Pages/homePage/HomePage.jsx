@@ -7,8 +7,14 @@ import TopChoice from "../../components/newRealease/TopChoice";
 import { useNavigate } from "react-router-dom";
 
 const HomePage = ({searched}) => {
+
+  const navigate = useNavigate()
+
+  const handleLoad = () => {
+    navigate('/home')
+  }
   return (
-    <div >
+    <div onLoad={handleLoad} >
       <div className="homepage-top-cont">
          <Hero />
          <TopRight />

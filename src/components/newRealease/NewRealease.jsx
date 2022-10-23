@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 import { useSearch } from '../../Context/SeachContext';
 
 const NewRealease = () => {
-  const { search } = useSearch('wizkid')
+  const { search } = useSearch('')
   const [ music, setMusic ] = useState([])
 
   useEffect(() => {

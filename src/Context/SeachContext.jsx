@@ -5,7 +5,7 @@ const SearchContext = createContext();
 const { Provider } = SearchContext;
 
 const SearchProvider = ({children}) => {
-   const [ search, setSearch ] = useState('');
+   const [ search, setSearch ] = useState('Wizkid');
 
    return <Provider value={{ search, setSearch }}> {children} </Provider>;
 }

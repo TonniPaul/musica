@@ -20,12 +20,13 @@
    color: var(--light);
    display: flex;
    flex-direction: column;
-   overflow: scroll;
+   overflow-x: scroll;
+   overflow-y: hidden;
    gap: 5px;
 }
 .song-title {
    text-overflow: ellipsis;
    white-space: nowrap;
-   /* padding-right: 1rem; */
-   overflow: scroll;
+   overflow-x: scroll;
+   overflow-y: hidden;
 }

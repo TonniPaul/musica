@@ -3,10 +3,10 @@ import './radio.css';
 
 const Radio = () => {
   return (
-    <div className='radio'>
+    <div className="radio">
       <RadioComponent />
-   </div>
-  )
+    </div>
+  );
 }
 
 export default Radio;

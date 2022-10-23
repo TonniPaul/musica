@@ -32,14 +32,14 @@ const NewRealease = () => {
       <div className="scroll-flex">
         {music.map((items) => {
           return (
-            <MusicCard 
+            <MusicCard
               key={items.id}
-              titlle = {items.name.split('-', 2)}
-              albumart= {items.thumbnail}
-              artist = {items.name.split('-',1)}
+              titlle={items.name.split("-", 2)}
+              albumart={items.thumbnail}
+              artist={items.name.split("-", 1)}
               {...items}
             />
-          )
+          );
         })}
         
       </div>

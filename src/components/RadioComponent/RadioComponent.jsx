@@ -8,11 +8,9 @@ const RadioComponent = () => {
    
   return (
     <div>
-      <AudioPlayer 
-         className="flex"
-      />
+      <AudioPlayer className="flex" />
     </div>
-  )
+  );
 }
 
 export default RadioComponent

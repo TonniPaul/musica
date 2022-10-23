@@ -8,11 +8,11 @@ const MusicCard = ({albumart, titlle, artist}) => {
         <img src={albumart} alt="album-art" className="music-art-iimg" />
       </div>
       <div className="music-card-text-cont">
-         <h3 className="song-title">{titlle}</h3>
-         <small className="artist-name"> {artist} </small>
-      </div>  
+        <h3 className="song-title">{titlle}</h3>
+        <small className="artist-name"> {artist} </small>
+      </div>
     </div>
-  )
+  );
 }
 
 export default MusicCard

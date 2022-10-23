@@ -1,9 +1,7 @@
 import React from 'react'
 
 const Playlist = () => {
-  return (
-    <div className='radio'>Playlist</div>
-  )
+  return <div className="radio">Playlist</div>;
 }
 
 export default Playlist

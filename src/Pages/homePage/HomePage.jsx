@@ -11,7 +11,7 @@ const HomePage = ({searched}) => {
   const navigate = useNavigate()
 
   const handleLoad = () => {
-    navigate('/home')
+    navigate("/home");
   }
   return (
     <div onLoad={handleLoad} >

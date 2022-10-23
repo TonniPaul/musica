@@ -9,23 +9,21 @@ import Playlist from './Pages/playlist/Playlist'
 import HomePage from './Pages/homePage/HomePage'
 
 function App() {
-  
-
   return (
-    <div className="App" >
+    <div className="App">
       <Navbar>
         <Routes>
-          <Route path='/' element= {<HomePage/>}  />
-          <Route path='/home' element={<HomePage />} />
-          <Route path='/playlist' element= { <Playlist /> } />
-          <Route path='/radio' element={ <Radio />} />
-          <Route path='log-out' element={ <LogOut />} />
-          <Route path='/profile' element={ <Profile />} />
-          <Route path='/videos' element={ <Video />} />
+          <Route path="/" element={<HomePage />} />
+          <Route path="/home" element={<HomePage />} />
+          <Route path="/playlist" element={<Playlist />} />
+          <Route path="/radio" element={<Radio />} />
+          <Route path="log-out" element={<LogOut />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/videos" element={<Video />} />
         </Routes>
       </Navbar>
     </div>
-  )
+  );
 }
 
 export default App

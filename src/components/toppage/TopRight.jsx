@@ -12,12 +12,7 @@ const TopRight = () => {
       <h2 className="head-top">Top charts</h2>
       <div className="mobile-flex">
         {RigthObjectData.map((items) => {
-          return(
-            <TopCard 
-              key={items.id}
-              {...items}
-            />
-          )
+          return <TopCard key={items.id} {...items} />;
         })}
       </div>
     </div>

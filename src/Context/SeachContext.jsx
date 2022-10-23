@@ -10,7 +10,6 @@ const SearchProvider = ({children}) => {
    return <Provider value={{ search, setSearch }}> {children} </Provider>;
 }
 
-
 // created a custom hook that would be used to update search 
 
 const useSearch = () => useContext(SearchContext);

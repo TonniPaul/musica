@@ -1,4 +1,5 @@
 import "./musicCard.css"
+import { motion } from "framer-motion"
 
 const MusicCard = ({albumart, titlle, artist}) => {
   return (

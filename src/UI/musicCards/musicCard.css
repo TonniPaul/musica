@@ -18,6 +18,14 @@
 }
 .music-card-text-cont {
    color: var(--light);
-   display: grid;
-   gap: 0;
+   display: flex;
+   flex-direction: column;
+   overflow: scroll;
+   gap: 5px;
+}
+.song-title {
+   text-overflow: ellipsis;
+   white-space: nowrap;
+   /* padding-right: 1rem; */
+   overflow: scroll;
 }

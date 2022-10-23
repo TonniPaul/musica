@@ -18,7 +18,6 @@ const TopCard = ({images, title, artist, time}) => {
          backgroundColor: `rgb(233, 202, 129)`,
          backgroundSize : 50
       }}
-      drag
       transition = {{
          type : 'tween',
          duration: 1

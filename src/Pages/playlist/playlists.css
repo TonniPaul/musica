@@ -36,7 +36,7 @@
    .playlist-cont {
       display: grid;
       grid-template-columns: 1fr;
-      margin: 4rem 0 32px;
+      margin: 1rem 0 32px;
       padding: 0;
    }
    .playlist-btn {

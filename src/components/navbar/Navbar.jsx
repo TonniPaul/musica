@@ -6,10 +6,9 @@ import { useState } from "react";
 import NavMobile from "./NavMobile";
 import { NavLink } from 'react-router-dom'
 import { useSearch } from "../../Context/SeachContext";
+import { motion } from "framer-motion";
 
-
-
-const Navbar = ({children}) => {
+const Navbar = ({ children }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [isSearching, setIsSearching] = useState(false);
 
@@ -34,13 +33,13 @@ const Navbar = ({children}) => {
           filter: isOpen && "var(--filter)",
         }}
       >
-        <div className="flex mobile-gap">
+        <div className="flex logo-gap">
           {!isOpen ? (
             <img
               src={menuIcon}
               alt=""
               onClick={handleNav}
-              className="hide-0n-desktop"
+              className="hide-0n-desktop menu-icon"
             />
           ) : (
             <span
@@ -60,7 +59,17 @@ const Navbar = ({children}) => {
             className="search-icon"
             onClick={handleSearching}
           />
-          <input
+          <motion.input
+            whileInView={{
+              opacity: 1,
+            }}
+            initial={{
+              opacity: 0,
+            }}
+            transition={{
+              type: "tween",
+              duration: 1,
+            }}
             type="text"
             placeholder="Seach artists"
             className="hide-on-mobile input-search"
@@ -248,6 +257,6 @@ const Navbar = ({children}) => {
       </div>
     </div>
   );
-}
+};
 
 export default Navbar

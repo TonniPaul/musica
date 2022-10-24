@@ -15,7 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/home" element={<HomePage />} />
-          <Route path="/playlist" element={<Playlist />} />
+          <Route path="/playlist/*" element={<Playlist />} />
           <Route path="/radio" element={<Radio />} />
           <Route path="log-out" element={<LogOut />} />
           <Route path="/profile" element={<Profile />} />

@@ -15,12 +15,13 @@ const TopCard = ({images, title, artist, time}) => {
       className="topcard-div"
       whileHover={{
         background: `url(./assets/herobg.svg)`,
-        backgroundColor: `rgb(233, 202, 129)`,
-        backgroundSize: 50,
+        backgroundColor: `rgba(233, 202, 150,0.5)`,
+        backgroundSize: "70%",
+        backgroundPositionX: "-40vw",
       }}
       transition={{
         type: "tween",
-        duration: 1,
+        duration: 0.9,
       }}
     >
       <div className="musicart-cont">

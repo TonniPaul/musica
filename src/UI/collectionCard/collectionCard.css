@@ -1,0 +1,94 @@
+.collection-card-cont {
+   display: flex;
+   width: 213px;
+   height: 14.625rem;
+   position: relative;
+   overflow: hidden;
+   border-radius: 20px;
+   transition: var(--transition);
+   color:#fff ;
+   cursor: pointer;
+}
+.filter-back {
+   transition: var(--transition);
+}
+.filter-back::before {
+    content: "";
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height:100%;
+  position: absolute;
+  backdrop-filter: brightness(10%);
+  border-radius:20px;
+  z-index: 1;
+  transform: var(--transition);
+  opacity: 0.5;
+}
+.collection-img {
+   width: 100%;
+   min-height: 100%;
+   border-radius: 20px;
+   bottom: 0;
+   left: 0;   
+   transition: var(--transition);
+   transform: scale(1);
+}
+.collection-text-cont {
+   position: absolute;
+   bottom: 20px;
+   left: 0px;
+   font-weight: 600;
+   padding: 0 .5rem;
+   align-self: flex-end;
+   width: 100%;
+   z-index: 2;
+}
+.collection-card-title {
+   font-size: 24px;
+}
+.collection-card-artist{
+   font-size: 10px;
+}
+.collection-flex {
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+}
+.play-btn {
+   border-radius: 50%;
+   padding: .5rem;
+   background-color: rgba(238, 152, 4, 0.7);
+   position: absolute;
+   transition: var(--transition);
+   opacity: 0;
+   right: 10px;
+   bottom: 1px;
+}
+.collection-card-like {
+   transition: var(--transition);
+}
+
+@media (max-width: 900px) {
+   .collection-card-cont {
+      width: 100%;
+      height: auto;
+   }
+   .play-btn {
+      opacity: 1;
+      right: 30px;
+   }
+   .collection-img {
+      transform: scale(1.18);
+   }
+   .collection-text-cont {
+      bottom: 50px;
+      transform: translateX(10px);
+   }
+   .collection-card-like {
+      opacity: 1 !important;
+   }
+   .translate-y {
+      transform: translateY(-40px) !important;
+   }
+}

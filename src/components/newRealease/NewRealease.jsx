@@ -9,20 +9,29 @@ const NewRealease = () => {
   const [ music, setMusic ] = useState([])
 
   useEffect(() => {
+    fetchNusicData();
+  }, [search]);
+
+  const fetchNusicData = () => {
     const options = {
-      method: 'GET',
+      method: "GET",
       headers: {
-        'X-RapidAPI-Key': 'b34b6492a8msh09001589cb463fap175b45jsn57b19623562a',
-        'X-RapidAPI-Host': 'youtube-music1.p.rapidapi.com'
-      }
+        "X-RapidAPI-Key": "b34b6492a8msh09001589cb463fap175b45jsn57b19623562a",
+        "X-RapidAPI-Host": "youtube-music1.p.rapidapi.com",
+      },
     };
-    
-    fetch(`https://youtube-music1.p.rapidapi.com/v2/search?query=${search}`, options)
-      .then(response => response.json())
-      .then(response => {return (response)})
-      .then(data => setMusic(data.result.songs))
-      // .catch(err => console.error(err));
-  }, [search])
+
+    fetch(
+      `https://youtube-music1.p.rapidapi.com/v2/search?query=${search}`,
+      options
+    )
+      .then((response) => response.json())
+      .then((response) => {
+        return response;
+      })
+      .then((data) => setMusic(data.result.songs))
+      .catch((err) => console.error(err));
+  };
   // const handleMusic = () => {
 
   // }

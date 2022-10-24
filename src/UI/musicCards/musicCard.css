@@ -25,7 +25,7 @@
    gap: 5px;
 }
 .song-title {
-   text-overflow: ellipsis;
+   text-overflow: clip;
    white-space: nowrap;
    overflow-x: scroll;
    overflow-y: hidden;

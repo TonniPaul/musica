@@ -15,6 +15,7 @@
 body {
   background: var(--primary-bg);
   color: var(--text-grey);
+  font-weight:500;
   user-select: none;
 }
 .margin {

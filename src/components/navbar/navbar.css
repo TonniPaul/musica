@@ -102,8 +102,7 @@
    filter: var(--whitefilter);
 }
  
-.active {
-   /* color: var(--light); */
+.mobile-gap a.active {
    filter: var(--yellowfilter);
 }
 

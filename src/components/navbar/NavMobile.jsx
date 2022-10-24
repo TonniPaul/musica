@@ -6,7 +6,7 @@ const NavMobile = ({isOpen}) => {
       className={`flex-column nav-mobile hide-on-desktop ${isOpen && "show"}`}
     >
       <div className="flex-column">
-        <NavLink to="/home" className="nav-links">
+        <NavLink to="home" className="nav-links">
           <div className="mobile-gap">
             <svg
               className="svg-icons"

@@ -102,7 +102,7 @@
    filter: var(--whitefilter);
 }
  
-.mobile-gap a.active {
+.mobile-gap a.active , .flex-column a.active {
    filter: var(--yellowfilter);
 }
 
@@ -133,6 +133,9 @@
       display: flex;
       flex-direction: column;
       gap: 30px;
+   }
+   .nav-mobile {
+      display: none;
    }
    .search-cont {
       padding: .7rem;

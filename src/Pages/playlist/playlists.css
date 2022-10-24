@@ -19,6 +19,7 @@
 }
 .playlist-btn-div a.active button{
    background: var(--yellow);
+   filter: none !important;
 }
 .btn-active-yellow:hover {
    background: transparent;

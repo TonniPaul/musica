@@ -7,6 +7,7 @@ import Profile from './Pages/profile/Profile'
 import Video from './Pages/video/Video'
 import Playlist from './Pages/playlist/Playlist'
 import HomePage from './Pages/homePage/HomePage'
+import ErrorPage from "./Pages/error/ErrorPage";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="log-out" element={<LogOut />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/videos" element={<Video />} />
+          <Route path="*" element={<ErrorPage />} />
         </Routes>
       </Navbar>
     </div>

@@ -53,7 +53,7 @@ const ErrorPage = () => {
         <h3
           style={{
             color: "#ff5061",
-            fontWeight: 900,
+            fontWeight: 700,
             fontSize: 30,
           }}
         >
@@ -70,7 +70,6 @@ const ErrorPage = () => {
           style={{
             textDecoration: "none",
             color: "#0234c1",
-            fontWeight: 900,
             background: " var(--yellow) ",
             padding: ".5rem 1rem",
             width: "max-content",

@@ -3,8 +3,19 @@ import image from "../../assets/tommorrow.svg";
 import playall from "../../assets/playall.svg";
 import add from "../../assets/add.svg";
 import emptylove from "../../assets/emptylove.svg";
+import redlove from "../../assets/redlove.svg";
+import { useLike } from "../../Context/LikedContext";
+import { useNavigate } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const SongCollectionCard = () => {
+  const { like, toggleLike } = useLike();
+  const navigate = useNavigate();
+
+  const handleNavigate = () => {
+    navigate(-1);
+  };
+
   return (
     <div
       style={{
@@ -12,6 +23,19 @@ const SongCollectionCard = () => {
       }}
       className="song-card-container"
     >
+      <motion.span
+        class="material-symbols-outlined back"
+        transition={{
+          type: "spring",
+          mass: 1,
+          stiffness: 100,
+          damping: 0,
+        }}
+        animate={{ x: 2 }}
+        onClick={handleNavigate}
+      >
+        arrow_back
+      </motion.span>
       <div className="song-flex-gap">
         <div className="song-card-hero-img-cont">
           <img src={image} alt="image" className="song-card-hero-img" />
@@ -36,8 +60,8 @@ const SongCollectionCard = () => {
               <img src={add} alt="play" className="s-c-icon" />
               <p>Add to collection</p>
             </div>
-            <div className="align-center btn-s-c">
-              <img src={emptylove} alt="add" />
+            <div className="align-center btn-s-c" onClick={toggleLike}>
+              <img src={like ? redlove : emptylove} alt="add" />
               <p className="lllll">Like</p>
             </div>
           </div>
@@ -48,3 +72,5 @@ const SongCollectionCard = () => {
   );
 };
 export default SongCollectionCard;
+
+

@@ -64,6 +64,37 @@
    height: 14px;
    width: 14px;
 }
-.hhjh {
-   padding: 10px 15px;
+
+.lllll {
+   display: none;
+}
+@media (max-width: 900px) {
+   .song-card-container {
+      padding: 0;
+   }
+   .song-card-container::before {
+      padding: 2rem 0;
+   }
+   .song-flex-gap {
+      flex-direction: column;
+      justify-content: center;
+   }
+   .song-card-hero-img-cont {
+      width: 100%;
+      height: auto;
+      margin: auto;
+      padding: 4rem 2rem 1rem;
+   }
+   .song-card-hero-text-c0nt {
+      width: 100%;
+      padding: 0 2rem;
+   }
+   .align-center {
+      padding: 0 1rem;
+      gap: 9px;
+      justify-content: center;
+   }
+   .lllll {
+      display: flex;
+   }
 }

@@ -24,7 +24,7 @@ const SongCollectionCard = () => {
               incidunt odio necessitatibus cum alias quam?
             </p>
             <div>
-              <p>67 Songs ~ 18 hours</p>
+              <p>67 Songs ~ 18 hrs+</p>
             </div>
           </div>
           <div className="align-center ">
@@ -32,12 +32,13 @@ const SongCollectionCard = () => {
               <img src={playall} alt="image" className="s-c-icon" />
               <p>Play all</p>
             </div>
-            <div className="align-center btn-s-c hhjh">
+            <div className="align-center btn-s-c ">
               <img src={add} alt="play" className="s-c-icon" />
               <p>Add to collection</p>
             </div>
-            <div className=" btn-s-c">
+            <div className="align-center btn-s-c">
               <img src={emptylove} alt="add" />
+              <p className="lllll">Like</p>
             </div>
           </div>
         </div>

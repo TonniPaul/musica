@@ -61,7 +61,11 @@ const SongCollectionCard = () => {
               <p>Add to collection</p>
             </div>
             <div className="align-center btn-s-c" onClick={toggleLike}>
-              <img src={like ? redlove : emptylove} alt="add" />
+              <img
+                src={like ? redlove : emptylove}
+                alt="add"
+                className="s-c-liked"
+              />
               <p className="lllll">Like</p>
             </div>
           </div>

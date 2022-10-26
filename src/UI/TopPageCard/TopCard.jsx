@@ -1,15 +1,15 @@
 import "./topcard.css"
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
+const TopCard = ({ images, title, artist, time }) => {
+  const [clicked, setClicked] = useState(false);
 
-const TopCard = ({images, title, artist, time}) => {
-   const [ clicked, setClicked] = useState(false)
-
-   const handleLike = () => {
-      // setclicked to opposite
-      setClicked(!clicked)
-}
+  const handleLike = () => {
+    // setclicked to opposite
+    setClicked(!clicked);
+  };
   return (
     <motion.div
       className="topcard-div"
@@ -28,7 +28,15 @@ const TopCard = ({images, title, artist, time}) => {
         <img src={images} alt="" className="music-art-img" />
       </div>
       <div className="music-details-cont">
-        <h3 className="song-title">{title}</h3>
+        <Link
+          to="/album/"
+          style={{
+            color: "inherit",
+            textDecoration: "none",
+          }}
+        >
+          <h3 className="song-title">{title}</h3>
+        </Link>
         <small className="artist-name"> {artist} </small>
         <small className="hour-txt"> {time} </small>
       </div>
@@ -54,6 +62,6 @@ const TopCard = ({images, title, artist, time}) => {
       </div>
     </motion.div>
   );
-}
+};
 
 export default TopCard

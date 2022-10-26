@@ -1,0 +1,69 @@
+.song-card-container {
+   background-repeat: no-repeat;
+   background-size: cover;
+   backdrop-filter: brightness(0%);
+   padding: 3rem ;
+   padding-left: 0;
+   width: 100%;
+}
+.song-card-container::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   height: 100%;
+   width: 100%;
+   background: black;
+   z-index: -1;
+   opacity: 0.85;
+}
+.song-flex-gap {
+   display: flex;
+   align-items: flex-end;
+   gap: 30px;
+   margin-bottom: 2rem;
+}
+.song-card-hero-img-cont {
+   width: 284px;
+   height: 289px;
+}
+.song-card-hero-img {
+   width: 100%;
+   height: 100%;
+}
+.song-card-hero-text-c0nt {
+   display: grid;
+   width: 80%;
+   font-size: 14px;
+   color: var(--light);
+   gap: 10px;
+   margin-bottom: 2rem;
+}
+.s-c-head-text {
+   font-size: 35px;
+   font-weight: 700;
+   color: #A4C7C6;
+}
+.align-center {
+   display: flex;
+   gap: 14px;
+   align-items: center;
+}
+.btn-s-c {
+   border-radius: 32px;
+   background : var(--primary-bg-alt);
+   width: max-content;
+   padding: 10px;
+   align-self: center;
+   display: flex;
+   background: rgba(255, 255, 255, 0.07);
+   backdrop-filter: blur(5px);
+   height: 36px;
+   color: #fff;
+}
+.s-c-icon{
+   height: 14px;
+   width: 14px;
+}
+.hhjh {
+   padding: 10px 15px;
+}

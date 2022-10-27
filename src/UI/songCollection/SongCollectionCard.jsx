@@ -7,9 +7,12 @@ import redlove from "../../assets/redlove.svg";
 import { useLike } from "../../Context/LikedContext";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
+import { useState } from "react";
+import MusicListCard from "../musicListCard/MusicListCard";
 
 const SongCollectionCard = () => {
   const { like, toggleLike } = useLike();
+
   const navigate = useNavigate();
 
   const handleNavigate = () => {
@@ -24,7 +27,7 @@ const SongCollectionCard = () => {
       className="song-card-container"
     >
       <motion.span
-        class="material-symbols-outlined back"
+        className="material-symbols-outlined back"
         transition={{
           type: "spring",
           mass: 1,
@@ -71,7 +74,9 @@ const SongCollectionCard = () => {
           </div>
         </div>
       </div>
-      <div></div>
+      <div className="musicList-gap">
+        <MusicListCard />
+      </div>
     </div>
   );
 };

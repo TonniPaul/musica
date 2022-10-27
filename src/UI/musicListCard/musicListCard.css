@@ -1,0 +1,21 @@
+
+   .music-flex {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      cursor: pointer;
+   }
+   .music-details-contt {
+      background: var(--primary-bg-alt);
+      width: 100%;
+      justify-content: space-between;
+      height: 56px;
+      border-radius: 15px;
+      padding-right: 2rem;
+      font-size: 12px;
+      color: #fff;
+   }
+   .music-artt {
+      width: 39px;
+      height: 39px;
+   }

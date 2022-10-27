@@ -80,6 +80,10 @@
    width: .9rem;
    height: .9rem;
 }
+.musicList-gap {
+   display: grid;
+   gap: 20px;
+}
 @media (max-width: 900px) {
    .song-card-container {
       padding: 0;

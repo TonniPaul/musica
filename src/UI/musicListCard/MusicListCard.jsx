@@ -1,9 +1,9 @@
 import "./musicListCard.css";
 import { useState } from "react";
-import image from "../../assets/tommorrow.svg";
 import emptylove from "../../assets/emptylove.svg";
 import redlove from "../../assets/redlove.svg";
-const MusicListCard = () => {
+
+const MusicListCard = ({ image }) => {
   const [musicLike, setMusicLike] = useState(false);
 
   const toggleMusicLike = () => {

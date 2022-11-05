@@ -9,9 +9,11 @@ import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import MusicListCard from "../musicListCard/MusicListCard";
+import { useImage } from "../../Context/ImageContext";
 
 const SongCollectionCard = () => {
   const { like, toggleLike } = useLike();
+  const { albumImage } = useImage();
 
   const navigate = useNavigate();
 
@@ -22,7 +24,7 @@ const SongCollectionCard = () => {
   return (
     <div
       style={{
-        backgroundImage: `url(${image})`,
+        backgroundImage: `url(${albumImage})`,
       }}
       className="song-card-container"
     >
@@ -41,7 +43,7 @@ const SongCollectionCard = () => {
       </motion.span>
       <div className="song-flex-gap">
         <div className="song-card-hero-img-cont">
-          <img src={image} alt="image" className="song-card-hero-img" />
+          <img src={albumImage} alt="image" className="song-card-hero-img" />
         </div>
         <div>
           <div className="song-card-hero-text-c0nt">
@@ -75,7 +77,13 @@ const SongCollectionCard = () => {
         </div>
       </div>
       <div className="musicList-gap">
-        <MusicListCard />
+        <MusicListCard image={albumImage} />
+        <MusicListCard image={albumImage} />
+        <MusicListCard image={albumImage} />
+        <MusicListCard image={albumImage} />
+        <MusicListCard image={albumImage} />
+        <MusicListCard image={albumImage} />
+        <MusicListCard image={albumImage} />
       </div>
     </div>
   );

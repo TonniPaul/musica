@@ -2,9 +2,17 @@ import "./topcard.css"
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { useImage } from "../../Context/ImageContext";
 
 const TopCard = ({ images, title, artist, time }) => {
   const [clicked, setClicked] = useState(false);
+
+  // custom that would be used to save clicked link Image to state.
+  const { setAlbumImage } = useImage();
+  // function to save image to state
+  const handleAlbumImage = () => {
+    setAlbumImage(images);
+  };
 
   const handleLike = () => {
     // setclicked to opposite
@@ -27,7 +35,8 @@ const TopCard = ({ images, title, artist, time }) => {
       <div className="musicart-cont">
         <img src={images} alt="" className="music-art-img" />
       </div>
-      <div className="music-details-cont">
+
+      <div className="music-details-cont" onClick={handleAlbumImage}>
         <Link
           to="/album/"
           style={{

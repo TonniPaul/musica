@@ -2,9 +2,9 @@
    background-repeat: no-repeat;
    background-size: cover;
    backdrop-filter: brightness(0%);
-   padding: 3rem ;
-   padding-left: 0;
+   padding: 3rem 1rem ;
    width: 100%;
+   position: relative;
 }
 .song-card-container::before {
    content: "";
@@ -14,7 +14,8 @@
    width: 100%;
    background: black;
    z-index: -1;
-   opacity: 0.85;
+   opacity: 0.8;
+   left: 0;
 }
 .song-flex-gap {
    display: flex;

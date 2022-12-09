@@ -1,5 +1,5 @@
 import "./playlists.css";
-import { NavLink, Routes, Route } from "react-router-dom";
+import { NavLink, Routes, Route, Link } from "react-router-dom";
 import MyCollection from "../../components/myCollection/MyCollection";
 import { motion } from "framer-motion";
 
@@ -19,16 +19,16 @@ const Playlist = () => {
       }}
     >
       <div className="playlist-btn-div">
-        <NavLink to="/playlist/collection">
+        <Link to="/playlist/">
           <button className="playlist-btn ">My collection</button>
-        </NavLink>
+        </Link>
         <NavLink to="/playlist/likes">
           <button className="playlist-btn">Likes</button>
         </NavLink>
       </div>
       <div className="playlist-data-flex"></div>
       <Routes>
-        <Route path="/collection" element={<MyCollection />} />
+        <Route index element={<MyCollection />} />
         <Route
           path="/likes"
           element={

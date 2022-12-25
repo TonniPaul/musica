@@ -1,18 +1,18 @@
-import MusicCard from '../../UI/musicCards/MusicCard';
-import "./newRelease.css"
-import { songs } from '../../objectFiles/songData';
-import { useEffect, useState } from 'react';
-import { useSearch } from '../../Context/SeachContext';
+import MusicCard from "../../UI/musicCards/MusicCard";
+import "./newRelease.css";
+import { songs } from "../../objectFiles/songData";
+import { useEffect, useState } from "react";
+import { useSearch } from "../../Context/SeachContext";
 
-const NewRealease = () => {
-  const { search } = useSearch('')
-  const [ music, setMusic ] = useState([])
+const NewRelease = () => {
+  const { search } = useSearch("");
+  const [music, setMusic] = useState([]);
 
   useEffect(() => {
-    fetchNusicData();
+    fetchMusicData();
   }, [search]);
 
-  const fetchNusicData = () => {
+  const fetchMusicData = () => {
     const options = {
       method: "GET",
       headers: {
@@ -36,7 +36,7 @@ const NewRealease = () => {
 
   // }
   return (
-    <div className='margin'>
+    <div className="margin">
       <h2 className="head-top">New releases</h2>
       <div className="scroll-flex">
         {music.map((items) => {
@@ -50,10 +50,9 @@ const NewRealease = () => {
             />
           );
         })}
-        
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default NewRealease
+export default NewRelease;

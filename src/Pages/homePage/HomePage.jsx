@@ -1,10 +1,10 @@
 import Hero from "../../components/Hero/Hero";
 import TopRight from "../../components/toppage/TopRight";
 import "./homepage.css";
-import NewRealease from "../../components/newRealease/NewRealease";
-import TopChoice from "../../components/newRealease/TopChoice";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
+import TopChoice from "../../components/newRelease/TopChoice";
+import NewRelease from "../../components/newRelease/NewRelease";
 
 const HomePage = ({ searched }) => {
   const navigate = useNavigate();
@@ -32,7 +32,7 @@ const HomePage = ({ searched }) => {
         <TopRight />
       </div>
       <div className="new-realease">
-        <NewRealease searched={searched} />
+        <NewRelease searched={searched} />
         <TopChoice />
       </div>
     </motion.div>

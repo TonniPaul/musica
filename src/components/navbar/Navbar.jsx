@@ -5,7 +5,7 @@ import searchicon from '../../assets/searchicon.svg';
 import { useState } from "react";
 import NavMobile from "./NavMobile";
 import { NavLink } from 'react-router-dom'
-import { useSearch } from "../../Context/SeachContext";
+import { useSearch } from "../../Context/SearchContext";
 import { motion } from "framer-motion";
 
 const Navbar = ({ children }) => {

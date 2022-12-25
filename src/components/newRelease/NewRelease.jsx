@@ -2,7 +2,7 @@ import MusicCard from "../../UI/musicCards/MusicCard";
 import "./newRelease.css";
 import { songs } from "../../objectFiles/songData";
 import { useEffect, useState } from "react";
-import { useSearch } from "../../Context/SeachContext";
+import { useSearch } from "../../Context/SearchContext";
 
 const NewRelease = () => {
   const { search } = useSearch("");
